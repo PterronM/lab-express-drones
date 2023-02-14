@@ -36,7 +36,7 @@ router.post('/drones/create', async(req, res, next) => {
     res.redirect("/drones")
     
   } catch (error) {
-    next (error)
+    res.redirect("/drones/create-form.hbs")
   }
 
 });
